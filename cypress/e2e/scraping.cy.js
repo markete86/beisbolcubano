@@ -1,5 +1,5 @@
 describe('Web Scraping Test', () => {
-    it('Scraping data from a Beisbolcubano', () => {
+    it('Scraping data from Beisbolcubano', () => {
         cy.visit('https://www.beisbolcubano.cu/').then(() => {
             cy.log('Page loaded').then(() => {
                 cy.title().should('eq', 'LEB | Sitio Oficial de la Liga Elite del Béisbol Cubano');
